@@ -24,7 +24,9 @@ Tworzenie firewalla przebiega dwuetapowo:
 1. Definiowanie listy o konkretnym numerze (określającym jej rodzaj):    
 ```access-list NUMER permit|deny ADRES_ŹRÓDŁOWY WILDCARD```
 2. Przypisanie list konkretnym interfejsom:  
-```ip access-group NUMER in|out```
+```cisco
+ip access-group NUMER in|out
+```
 
 Aby wyświetlić utworzone listy wywołaj: `show access-lists`
 
@@ -35,3 +37,6 @@ Działają analogicznie do zwykłych  masek adresu, lecz wykonują operację *OR
 
 **Przykład**:
 W liście dostępu mamy wpis: `10.131.10.40 0.0.255.0 deny`. Przychodzi pakiet z adresem źródłowym `10.131.51.40`. Przykładając maskę do adresu w liście dostajemy: `10.131.255.40`, robiąc to samo dla kolejnego adresu: `10.131.255.40`. Dostaliśmy to samo, czyli adres dopasował się do wpisu w liście - zostanie odrzucony.  
+
+### Rozszerzone listy dostępu
+![Rozszerzone listy dostępu](images/extended.png)
