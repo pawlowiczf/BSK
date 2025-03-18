@@ -27,3 +27,11 @@ Tworzenie firewalla przebiega dwuetapowo:
 ```ip access-group NUMER in|out```
 
 Aby wyświetlić utworzone listy wywołaj: `show access-lists`
+
+### Działanie odwróconych masek (wildacard)
+Działają analogicznie do zwykłych  masek adresu, lecz wykonują operację *OR* (zamiast operacji *AND*). W efekcie:
+- 0 - sprawdź odpowiedni bit 
+- 1 - bit nieistotny 
+
+**Przykład**:
+W liście dostępu mamy wpis: `10.131.10.40 0.0.255.0 deny`. Przychodzi pakiet z adresem źródłowym `10.131.51.40`. Przykładając maskę do adresu w liście dostajemy: `10.131.255.40`, robiąc to samo dla kolejnego adresu: `10.131.255.40`. Dostaliśmy to samo, czyli adres dopasował się do wpisu w liście - zostanie odrzucony.  
