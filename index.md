@@ -1,5 +1,5 @@
 ---
-title: apto
+title: BSK
 layout: default
 ---
 
@@ -7,4 +7,4 @@ layout: default
 
 ## Laboratoria  
 
-[Lab 1 - Firewall/zapory ogniowe](firewall.md)
+- [Lab 1 - Firewall/zapory ogniowe](firewall.md)
