@@ -1,1 +1,1 @@
-Link: [https://pawlowiczf.github.io/BSK]
+Link: https://pawlowiczf.github.io/BSK
