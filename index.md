@@ -8,3 +8,4 @@ layout: default
 ## Laboratoria  
 
 - [Lab 1 - Firewall/zapory ogniowe](firewall.md)
+- [Lab 2](lab.md)
