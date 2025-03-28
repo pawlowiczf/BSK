@@ -7,5 +7,9 @@ layout: default
 
 ## Laboratoria  
 
-- [Lab 1 - Firewall/zapory ogniowe](firewall.md)
+- [Lab 1 - Firewall/zapory ogniowe](firewalls/firewall.md)
 - [Lab 2](lab.md)
+
+## Przydatne konfiguracje 
+
+- [Zdalny dostęp do](important/remote-access.md)

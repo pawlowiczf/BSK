@@ -11,8 +11,6 @@ layout: default
 - IDS - Intrusion Detection System - wykrywa i raportuje  
 - IPS - Inttrustion Protection System - wykrywa i reaguje 
 
-![Urządzenia IDS/IPS](images/devices,ids,ips.png)
-
 ## Listy ACL (Access Control Lists)
 Najprostsze klasyfikatory (**standard**) klasyfikują jedynie na podstawie adresu źródłowego. Są także rozszerzone (**extended**), które klasyfikują na podstawie: 
 - adresów źródłowych i docelowych 
