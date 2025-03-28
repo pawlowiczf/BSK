@@ -12,4 +12,4 @@ layout: default
 
 ## Przydatne konfiguracje 
 
-- [Zdalny dostęp do](important/remote-access.md)
+- [Zdalny dostęp do routera/switcha przez SSH, TELNET](important/remote-access.md)
