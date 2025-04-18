@@ -8,7 +8,7 @@ layout: default
 ## Laboratoria  
 
 - [Lab 1 - Firewall/zapory ogniowe](firewalls/firewall.md)
-- [Lab 2](lab.md)
+- [Lab 2 - Prywatne VLANy + HSRP](notes/vlans.md)
 
 ## Przydatne konfiguracje 
 
