@@ -24,6 +24,12 @@ W prywatnych VLANach wszystkie hosty należą do tej samej podsieci IP.
 Promiscuous port – może rozmawiać ze wszystkimi (np. router, firewall)
 # Hot Standby Routing Protocol (HSRP)
 Ustawiamy hostów nieistniejącą bramę - routery podszywają się pod niego (podobne do ProxyARP, ale maski podsieci są takie same). 
+
 ![HSRP](hsrp.png)
 
 Jest to tzw. wirtualny router z wirtualnym adresem MAC. W przypadku awarii jednego routera, drugi router przejmuje tą wirtualną adresację. Musi także powiadomić switche, aby te zaaktualizowały swoje tablice FDB (gratuitous ARP). 
+
+Działanie:
+1. Routery dołączają do wspólnej grupy HSRP
+2. Konfigurują wspólne wirtualne IP, które będzie bramą domyślną dla hostów. Jest też wirtualny MAC. 
+3. Jeden zostaje `Active Router`, drugi to `Standby Router`. 
