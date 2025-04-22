@@ -14,4 +14,5 @@ R#show standby [brief]
 R#debug standby 
 ```
 Należy wyłączyć ICMP Redirect 
+
 ![HSRP Conf](hsrp-conf.png)
