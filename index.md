@@ -14,3 +14,16 @@ layout: default
 ## Przydatne konfiguracje 
 
 - [Zdalny dostęp do routera/switcha przez SSH, TELNET](important/remote-access.md)
+
+
+```python
+from dimacs import *
+
+G = loadGraph( "graph/e5" )
+V = len(G)
+for v in range(V):
+  s = "%d :" % v
+  for u in G[v]:
+    s += " %d" % u
+  print s
+```
